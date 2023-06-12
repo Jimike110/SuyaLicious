@@ -1,12 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant | Jimike</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="bg-brand-wine">
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Suya Spice</span>
+            <img
+              class="h-8 w-auto"
+              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              alt=""
+            />
+            <h1 class="text-2xl font-semibold leading-6 text-white">
+              Suya Spice
+            </h1>
+          </a>
+        </div>
+        <div class="flex lg:hidden" id="openMobileMenu">
+          <button
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <div class="relative">
+            <button
+              type="button"
+              class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-white"
+              id="productMegaMenuButton"
+              aria-expanded="false"
+            >
+              About Us
+            </button>
+          </div>
+          <a href="#" class="text-sm font-semibold leading-6 text-white"
+            >Menu</a
+          >
+          <a href="#" class="text-sm font-semibold leading-6 text-white"
+            >Venue</a
+          >
+          <a href="#" class="text-sm font-semibold leading-6 text-white"
+            >Events</a
+          >
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a href="#" class="text-sm font-semibold leading-6 text-white"
+            >Book Now</a
+          >
+        </div>
+      </nav>
+
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden hidden mobileMenu" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-10"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-brand-wine px-6 py-6 sm:max-w-sm sm:ring-1 sm:ringwhite/10"
+        >
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Suya Spice</span>
+              <img
+                class="h-8 w-auto"
+                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                alt=""
+              />
+            </a>
+            <button
+              type="button"
+              class="-m-2.5 rounded-md p-2.5 text-white"
+              id="closeMobileMenu"
+            >
+              <span class="sr-only">Close menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <div class="-mx-3">
+                  <button
+                    type="button"
+                    class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-white hover:bg-gray-50 hover:text-brand-wine"
+                    id="productButton"
+                    aria-controls="disclosure-1"
+                    aria-expanded="false"
+                  >
+                    About
+                  </button>
+                </div>
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50 hover:text-brand-wine"
+                  >Menu</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50 hover:text-brand-wine"
+                  >Venue</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-50 hover:text-brand-wine"
+                  >Events</a
+                >
+              </div>
+              <div class="py-6">
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-50 hover:text-brand-wine"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script type="text/javascript">
+      // Get the necessary DOM elements
+      const openMobileMenuBtn = document.querySelector("#openMobileMenu");
+      const closeMobileMenuBtn = document.querySelector("#closeMobileMenu");
+      const mobileMenu = document.querySelector(".mobileMenu");
+      const productButton = document.querySelector("#productButton");
+      const productMenu = document.querySelector("#disclosure-1");
+      const productSVG = document.querySelector("#productSVG");
+      const productMegaMenuButton = document.querySelector(
+        "#productMegaMenuButton"
+      );
+      const productMegaMenuSVG = document.querySelector("#productMegaMenuSVG");
+      const productMegaMenu = document.querySelector("#productMegaMenu");
+
+      var isEntering = true;
+      function productMegaMenuAnimation() {
+        productMegaMenuButton.addEventListener("click", () => {
+          if (isEntering) {
+            productMegaMenu.animate(
+              [
+                { transform: "translateY(1rem)", opacity: 0 },
+                { transform: "translateY(0)", opacity: 1 },
+              ],
+              {
+                duration: 200,
+                easing: "ease-out",
+              }
+            );
+          } else {
+            productMegaMenu.animate(
+              [
+                { transform: "translateY(0)", opacity: 1 },
+                { transform: "translateY(1rem)", opacity: 0 },
+              ],
+              {
+                duration: 500,
+                easing: "ease-in",
+              }
+            );
+          }
+        });
+      }
+
+      // Toggle the mobile menu
+      openMobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.remove("hidden");
+      });
+
+      closeMobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("hidden");
+      });
+
+      productMegaMenuAnimation();
+      productMegaMenuButton.addEventListener("click", () => {
+        productMegaMenu.classList.toggle("hidden");
+        productMegaMenuSVG.classList.toggle("rotate-180");
+      });
+
+      // Toggle the product menu
+      productButton.addEventListener("click", () => {
+        productMenu.classList.toggle("hidden");
+        productSVG.classList.toggle("rotate-180");
+      });
+
+      // Close the product menu when clicking outside of it
+      document.addEventListener("click", (event) => {
+        const isClickInside =
+          productMegaMenu.contains(event.target) ||
+          productMegaMenuButton.contains(event.target);
+        if (!isClickInside) {
+          productMegaMenu.classList.add("hidden");
+          productMegaMenuSVG.classList.remove("rotate-180");
+        }
+      });
+    </script>
+  </body>
 </html>
