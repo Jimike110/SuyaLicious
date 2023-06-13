@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-brand-wine">
     <header>
@@ -180,7 +184,7 @@
         <img src="./assets/images/vector-circle.png" class="w-[50px] absolute" alt="Vector" class="absolute bottom-0 left-50" />
     </div>
 
-    <div class="relative min-h-[90vh] w-full py-10 pb-[500px] px-10">
+    <div class="relative min-h-[90vh] w-full py-10 pb-[400px] px-10">
         <div class="sm:w-[40%] sm:float-left">
             <img src="./assets/images/suyalicious-2.jpg" class="max-h-[600px] mx-auto drop-shadow-lg" alt="SuyaLicious" />
         </div>
@@ -215,24 +219,58 @@
         </div>
     </div> -->
 
-    <h2 class="text-white text-center mb-5 mx-10 font-cotoris text-3xl">Don't Take Our Words For It</h2>
-    <div class="sm:my-40 mb-20 mx-10 bg-brand-yellow shadow-md overflow-hidden">
+    <div class="sm:my-40 mb-20 mx-20">
+    <h2 class="text-white text-center mb-5 font-cotoris md:text-5xl text-3xl">Don't Take Our Words For It</h2>
+    <div class="bg-brand-yellow shadow-md overflow-hidden">
         <div class="md:flex">
           <div class="md:shrink-0">
             <img class="h-48 w-full object-cover md:h-full md:w-48" src="./assets/images/suyalicious-3.jpg" alt="SuyaLicious' Customer's Review">
           </div>
           <div class="p-8">
-            <h2 class="block text-2xl font-inter font-semibold text-black">Amina Abdullahi</h2>
+            <h2 class="block text-2xl font-inter font-semibold text-black">Ciroma Chukwuma Adekunle</h2>
             <div class="uppercase mt-1 leading-tight tracking-wide font-inter text-sm text-brand-wine font-semibold">Food Blogger, Tasty TidBits</div>
-            <p class="mt-2 text-slate-900 font-inter">Absolutely loved my dining experience at SuyaLicious! 
-                The suya dishes were incredibly flavorful and perfectly grilled. 
+            <p class="mt-2 text-slate-900 font-inter">Absolutely loved my dining experience at <strong>SuyaLicious</strong>! 
+                The suya dishes were incredibly flavourful and perfectly grilled. 
                 The staff was friendly and attentive, ensuring that we had a memorable evening. 
-                The ambiance was vibrant and culturally immersive, transporting me to the heart of Nigeria. I highly recommend SuyaLicious to anyone looking to explore the diverse and delicious world of Nigerian cuisine. 
+                The ambiance was vibrant and culturally immersive, transporting me to the heart of Nigeria. I highly recommend <strong>SuyaLicious</strong> to anyone looking to explore the diverse and delicious world of Nigerian cuisine. 
                 Can't wait to visit again!</p>
           </div>
         </div>
       </div>
+</div>
+      <div class="bg-[url('./assets/images/menu-bg.jpg')] px-10 bg-no-repeat bg-cover h-[600px] flex text-center items-center justify-center">
+        <div class="backdrop-brightness-50 relative py-10 px-3 drop-shadow-lg">
+            <img src="./assets/images/vector-star.png" alt="" class="w-[55px] drop-shadow-lg z-10 mx-auto" />
+            <h2 class="text-white font-cotoris text-5xl">A unique menu that reflects the true essence of the Nigerian Cuisine</h2>
+            <button class="text-xl font-cotoris font-semibold leading-6 text-brand-wine bg-brand-yellow my-6 px-4 py-2 hover:border-2 hover:border-brand-wine hover:scale-110">
+                Our Menu
+            </button>
+        <img src="./assets/images/Group 230.png" alt="" class="absolute opacity-40 bottom-0 right-0 w-[400px]">
+        </div>
+        </div>
 
+        <footer class="bg-brand-yellow">
+            <div class="text-center px-10 pt-7">
+                <img src="./assets/images/logo.png" alt="SuyaLicious Logo" class="h-[60px] mx-auto">
+                <div class="font-inter text-brand-wine font-semibold py-4 space-x-5 space-y-5">
+                    <a href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Menu</a>
+                    <a href="">Venue</a>
+                    <a href="">Events</a>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+            <div class="flex items-center justify-center space-x-2 p-2 border-t border-1 border-brand-wine">
+                <p class="font-inter font-semibold text-slate-900">&copy; <span id="year"></span> All Rights Reserved | Made by Jimike</p>
+                <a href="https://facebook.com/michael.oladoye.129"><i class="fa-brands fa-facebook text-2xl"></i></a>
+                <a href="https://github.com/Jimike110"><i class="fa-brands fa-github text-2xl"></i></a>
+                <a href="https://linkedin.com/in/jimike"><i class="fa-brands fa-linkedin text-2xl"></i></a>
+                <a href="https://twitter.com/jimikeCodes"><i class="fa-brands fa-twitter text-2xl"></i></a>
+            </div>
+        </footer>
+
+        <script src="https://kit.fontawesome.com/4d90d23ba3.js" crossorigin="anonymous"></script>
     <script type="text/javascript">
       // Get the necessary DOM elements
       const openMobileMenuBtn = document.querySelector("#openMobileMenu");
@@ -246,6 +284,9 @@
       );
       const productMegaMenuSVG = document.querySelector("#productMegaMenuSVG");
       const productMegaMenu = document.querySelector("#productMegaMenu");
+      const year = document.querySelector("#year");
+      
+      year.innerHTML = new Date().getFullYear();
 
       var isEntering = true;
       function productMegaMenuAnimation() {
