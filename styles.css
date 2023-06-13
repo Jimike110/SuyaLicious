@@ -926,6 +926,18 @@ video {
   max-height: 400px;
 }
 
+.max-h-\[450px\] {
+  max-height: 450px;
+}
+
+.max-h-\[500px\] {
+  max-height: 500px;
+}
+
+.max-h-\[680px\] {
+  max-height: 680px;
+}
+
 .min-h-\[\] {
   min-height: ;
 }
