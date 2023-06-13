@@ -665,6 +665,18 @@ video {
   bottom: 1.75rem;
 }
 
+.-bottom-7 {
+  bottom: -1.75rem;
+}
+
+.right-6 {
+  right: 1.5rem;
+}
+
+.bottom-20 {
+  bottom: 5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -814,6 +826,10 @@ video {
   margin-right: 1.75rem;
 }
 
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .block {
   display: block;
 }
@@ -918,6 +934,10 @@ video {
   min-height: 90vh;
 }
 
+.min-h-\[80vh\] {
+  min-height: 80vh;
+}
+
 .w-11 {
   width: 2.75rem;
 }
@@ -980,6 +1000,26 @@ video {
 
 .max-w-sm {
   max-width: 24rem;
+}
+
+.max-w-\[100px\] {
+  max-width: 100px;
+}
+
+.max-w-\[50px\] {
+  max-width: 50px;
+}
+
+.max-w-\[150px\] {
+  max-width: 150px;
+}
+
+.max-w-\[250px\] {
+  max-width: 250px;
+}
+
+.max-w-\[350px\] {
+  max-width: 350px;
 }
 
 .flex-1 {
@@ -1389,6 +1429,30 @@ video {
   padding-bottom: 5rem;
 }
 
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pb-0 {
+  padding-bottom: 0px;
+}
+
+.pb-\[50px\] {
+  padding-bottom: 50px;
+}
+
+.pb-\[500px\] {
+  padding-bottom: 500px;
+}
+
+.pb-\[100px\] {
+  padding-bottom: 100px;
+}
+
+.pb-\[300px\] {
+  padding-bottom: 300px;
+}
+
 .font-cotoris {
   font-family: CotorisBold, sans-serif;
 }
@@ -1599,6 +1663,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.drop-shadow-xl {
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -1691,6 +1760,14 @@ video {
     float: right;
   }
 
+  .sm\:float-left {
+    float: left;
+  }
+
+  .sm\:ml-10 {
+    margin-left: 2.5rem;
+  }
+
   .sm\:w-\[40\%\] {
     width: 40%;
   }
@@ -1707,8 +1784,16 @@ video {
     width: 42%;
   }
 
+  .sm\:w-\[50\%\] {
+    width: 50%;
+  }
+
   .sm\:max-w-sm {
     max-width: 24rem;
+  }
+
+  .sm\:pl-10 {
+    padding-left: 2.5rem;
   }
 
   .sm\:ring-1 {
@@ -1785,6 +1870,10 @@ video {
 
   .md\:pr-3 {
     padding-right: 0.75rem;
+  }
+
+  .md\:pl-10 {
+    padding-left: 2.5rem;
   }
 }
 
