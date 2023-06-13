@@ -822,6 +822,11 @@ video {
   margin-right: 5rem;
 }
 
+.mx-24 {
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
 .-mt-20 {
   margin-top: -5rem;
 }
@@ -1688,6 +1693,11 @@ video {
   padding-right: 3rem;
 }
 
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2261,6 +2271,16 @@ video {
     margin-bottom: 0px;
   }
 
+  .sm\:mx-20 {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .sm\:mx-24 {
+    margin-left: 6rem;
+    margin-right: 6rem;
+  }
+
   .sm\:w-\[40\%\] {
     width: 40%;
   }
@@ -2276,6 +2296,11 @@ video {
   .sm\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
+  }
+
+  .sm\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .sm\:ring-1 {
