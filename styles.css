@@ -1682,6 +1682,10 @@ video {
   fill: #fff;
 }
 
+.fill-brand-wine {
+  fill: #5B0017;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
@@ -2131,6 +2135,10 @@ video {
   color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
+.text-\[1F0008\] {
+  color: 1F0008;
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -2410,9 +2418,19 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-brand-wine:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(91 0 23 / var(--tw-bg-opacity));
+}
+
 .hover\:text-brand-wine:hover {
   --tw-text-opacity: 1;
   color: rgb(91 0 23 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
