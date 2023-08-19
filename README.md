@@ -1,5 +1,7 @@
 # SuyaLicious
 
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 ![Preview](./path/to/preview/image.png)
 
 SuyaLicious is a responsive and visually appealing restaurant website built for a fictional Nigerian-inspired brand. The project showcases my skills in HTML5, Tailwind CSS, and JavaScript.
@@ -21,6 +23,7 @@ Check out the live project: [https://suyalicious.netlify.app/](https://suyalicio
 - [Usage](#usage)
 - [Future Enhancements](#future-enhancements)
 - [Contributing](#contributing)
+- [License](#license)
 - [Contact](#contact)
 
 ## Live Project
@@ -56,6 +59,10 @@ The project's future plan includes the integration of an online booking system. 
 ## Contributing
 
 If you have suggestions or improvements, feel free to open an issue or pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](https://mit-license.org/) page for details.
 
 ## Contact
 
