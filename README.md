@@ -2,7 +2,7 @@
 
 ![Preview](./path/to/preview/image.png)
 
-SuyaLicious is a responsive and visually appealing restaurant website built for a fictional Nigerian-inspired brand. The project showcases your skills in HTML5, Tailwind CSS, and JavaScript.
+SuyaLicious is a responsive and visually appealing restaurant website built for a fictional Nigerian-inspired brand. The project showcases my skills in HTML5, Tailwind CSS, and JavaScript.
 
 Check out the live project: [https://suyalicious.netlify.app/](https://suyalicious.netlify.app/)
 
@@ -40,6 +40,7 @@ Explore the live project: [https://suyalicious.netlify.app/](https://suyalicious
    ```bash
    git clone https://github.com/YourUsername/SuyaLicious.git
    cd SuyaLicious
+```
    
 2. Open the index.html file in a modern web browser.
 
