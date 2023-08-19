@@ -40,7 +40,6 @@ Explore the live project: [https://suyalicious.netlify.app/](https://suyalicious
    ```bash
    git clone https://github.com/YourUsername/SuyaLicious.git
    cd SuyaLicious
-```
    
 2. Open the index.html file in a modern web browser.
 
